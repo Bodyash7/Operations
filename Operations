@@ -1,4 +1,6 @@
-a='''The Zen of Python, by Tim Peters 
+import this
+a='''The Zen of Python, by Tim Peters
+
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -11,47 +13,15 @@ Although practicality beats purity.
 Errors should never pass silently.
 Unless explicitly silenced.
 In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
+There should be one-- and preferably only one --obvious way todo it.
 Although that way may not be obvious at first unless you're Dutch.
 Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!'''
-
-#a.find("$")
-b=0
-a.lower()
-d=a
-while(1):
-    c=d.find("Sparse")
-    d=d[c+6:]
-    if(c==-1):
-        break
-    b+=1
-print(b)
-d=a
-b=0
-while(1):
-    c=d.find("is")
-    d=d[c+5:]
-    if(c==-1):
-        break
-    b+=1
-print(b)
-d=a
-b=0
-while(1):
-    c=d.find("better")
-    d=d[c+2:]
-    if(c==-1):
-        break
-    b+=1
-print(b)
-
-d=a.lower()
-
-
-print(d+"\n\n")
-c=a.replace("i","&")
-print(c)
+print(a.upper())
+print(a.count('better'))
+print(a.count('never'))
+print(a.count('is'))
+print(a.replace("i","&"))
